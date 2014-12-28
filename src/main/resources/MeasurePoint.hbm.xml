@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.soldev.MeasurePoint" table="MEASUREPOINT">
+        <meta attribute="class-description">
+            This class contains the measurePoint detail.
+        </meta>
+        <id name="id" type="int" column="id">
+            <generator class="sequence">
+                <param name="sequence">measurepoint_id_seq</param>
+            </generator>
+        </id>
+        <property name="totalDalPower" column="tDPower" type="int"/>
+        <property name="totalPiekPower" column="tPPower" type="int"/>
+        <property name="currentPower" column="cpower" type="int"/>
+        <property name="totalGas" column="tGas" type="int"/>
+        <property type="org.jadira.usertype.dateandtime.joda.PersistentDateTime" name="measureDateTime" column="mDateTime"/>
+    </class>
+</hibernate-mapping>

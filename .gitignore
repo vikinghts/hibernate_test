@@ -3,3 +3,10 @@ build/
 
 # Ignore Gradle GUI config
 gradle-app.setting
+.DS_Store
+hibernate_test.iml
+hibernate_test.ipr
+hibernate_test.iws
+docker/DataManager-0.1-shadow.jar
+docker/DataManager-0.1.jar
+docker/DataManager-0.1.war
