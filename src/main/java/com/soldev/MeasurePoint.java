@@ -3,9 +3,6 @@ package com.soldev;
 
 import org.joda.time.DateTime;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-
 /**
  * Created by kjansen on 27/12/14.
  */
